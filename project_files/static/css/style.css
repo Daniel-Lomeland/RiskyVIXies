@@ -1,0 +1,28 @@
+.navbar {
+    color: #FFFFFF;
+    background-color: midnightblue;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 14px;
+    background: midnightblue;
+    color:white;
+    position: absolute;
+}
+
+.jumbotron {
+    background-image: url("../images/stock_mkt.jpg");
+    background-size: cover;
+  }
+
+hr {
+    border: 1px dotted #808080;
+  }
+
+
+
