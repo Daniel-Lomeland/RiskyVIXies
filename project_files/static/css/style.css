@@ -1,6 +1,7 @@
 .navbar {
-    color: #FFFFFF;
-    background-color: midnightblue;
+    color: #A30000;
+    background-color: white;
+    border: none;
 }
 
 .navbar-brand {
@@ -10,9 +11,14 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 14px;
-    background: midnightblue;
-    color:white;
-    position: absolute;
+    background: white;
+    color: #A30000;
+    position:absolute; 
+    border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #FF7700;
 }
 
 .jumbotron {
@@ -21,7 +27,7 @@
   }
 
 hr {
-    border: 1px dotted #808080;
+    border: 1px dotted #4B8937;
   }
 
 
