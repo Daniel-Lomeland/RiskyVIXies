@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VIX v. News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <div class="container">
+        <!-- Creates the Nav Container -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">VIX vs. News</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Regression</a></li>
+                    <li><a href="#">Clustering</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--Middle-->
+        <div class="container">
+            <div class="row">
+                <!--First Column in this Row-->
+                <div class="col-md-12">
+                    <div class="box">
+                        <h1>Linear Regression Model</h1>
+                        <hr>
+                        <p>Financial news headlines from the New York Times, were passed to a Google API to get a sentiment score from -1 to 1 of the news article.  An average sentiment score for the day was then determined.  The daily sentiment score of the news headlines and the closing values of the VIX are shown in a scatter plot here. </p>
+                        <p><img src="../static/images/scatter.png" class="img-responsive" alt="Scatter Plot (Sentiment and the VIX)"></p><br>
+                        <p>The sentiment scores and VIX closing values were then used in the supervised learning Linear Regression model from scikitlearn.  Below are the training and testing results.</p>
+                        <p><img src="../static/images/train.png" class="img-responsive" alt="Training Results (Sentiment and the VIX)"></p><br>
+                        <p><img src="../static/images/test.png" class="img-responsive" alt="Test Results (Sentiment and the VIX)"></p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row thinline">
+            <div class="col">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row footer panel-footer">
+            <p>© Nichelle, Daniel, Kaushik, and Kristi</p>
+        </div>
+
+
+</body>
+
+</html>
