@@ -2,18 +2,30 @@
 var trace1 = {
     x: data.map(row => row.date),
     y: data.map(row => row.vix_close),
-    text: data.map(row => row.date),
+    // text: data.map(row => row.date),
+    mode: 'lines',
+    line: {
+        color: '#4B8937',
+        width: 4
+    },
     name: "VIX",
-    type: "line"
+    // type: "line"
   };
   
 //   Trace 2 for the Roman Data
   var trace2 = {
     x: data.map(row => row.date),
     y: data.map(row => row.sentiment_score),
-    text: data.map(row => row.date),
-    name: "Sentiment Score",
-    type: "line"
+    // text: data.map(row => row.date),
+    name: "Positivity",
+    // type: "line",
+    yaxis: "y2",
+    mode: 'lines',
+    line: {
+        color: '#FF7700',
+        width: 1,
+        dash: "dot"
+    }
   };
   
   // Combining both traces
@@ -22,15 +34,46 @@ var trace1 = {
   // Apply the group barmode to the layout
   var layout = {
     title: "VIX vs. Positivity",
-    xaxis: { title: "Date" },
-    yaxis: { title: "VIX" },
+    xaxis: { 
+        title: "Date", 
+        tickangle: "-45",
+    },
+    yaxis: { 
+        title: "VIX Closing Value (Source: CBOE)" ,
+        titlefont: {color: '#4B8937'},
+        tickfont: {color: '#4B8937'},
+        color: '#4B8937'
+    },
     yaxis2: {
         title: 'Sentiment Score',
-        titlefont: {color: 'orange'},
-        tickfont: {color: 'orange'},
+        titlefont: {color: '#FF7700'},
+        tickfont: {color: '#FF7700'},
         anchor: 'x',
-        overlaying: 'n',
+        overlaying: 'y',
         side: 'right'
+      },
+      autosize: false,
+      width: 1200,
+      height: 800,
+      margin: {
+        l: 50,
+        r: 50,
+        b: 100,
+        t: 100,
+        pad: 4
+      },
+      showlegend: true,
+      legend: {
+          x: 1.1,
+          y: 1,
+          traceorder: 'normal',
+          font: {
+              family: 'sans-serif',
+              size: 12,
+              color: '#000'
+          },
+          bordercolor: '#DDD1C7',
+          borderwidth: 1
       }
   };
   
