@@ -1,165 +1,329 @@
 var data = [{
     "date": "2019-01-02T00:00:00.000Z",
-    "sentiment_score": -0.0307692301,
-    "vix_close": 23.22
+    "sentiment_score": -0.0308,
+    "feature_2": -0.373677904,
+    "feature_3": 0.431631314,
+    "feature_4": -0.875020619,
+    "feature_5": 0.904831534,
+    "vix_close": -8.6546026751
 }, {
     "date": "2019-01-03T00:00:00.000Z",
-    "sentiment_score": 0.0583333373,
-    "vix_close": 25.45
+    "sentiment_score": 0.0583,
+    "feature_2": -0.644730928,
+    "feature_3": 0.466891369,
+    "feature_4": -0.254484781,
+    "feature_5": 0.664185029,
+    "vix_close": 9.6037898363
 }, {
     "date": "2019-01-04T00:00:00.000Z",
-    "sentiment_score": 0.0666666677,
-    "vix_close": 21.38
+    "sentiment_score": 0.0667,
+    "feature_2": -0.160035687,
+    "feature_3": 0.342782797,
+    "feature_4": -0.308019281,
+    "feature_5": 0.398702779,
+    "vix_close": -15.9921414538
 }, {
     "date": "2019-01-07T00:00:00.000Z",
-    "sentiment_score": 0.1933333347,
-    "vix_close": 21.4
+    "sentiment_score": 0.1933,
+    "feature_2": -0.000592504,
+    "feature_3": 0.870994648,
+    "feature_4": -0.150807907,
+    "feature_5": 0.255887708,
+    "vix_close": 0.0935453695
 }, {
     "date": "2019-01-08T00:00:00.000Z",
-    "sentiment_score": 0.117647061,
-    "vix_close": 20.47
+    "sentiment_score": 0.1176,
+    "feature_2": -0.142589036,
+    "feature_3": 0.093280883,
+    "feature_4": -0.700056309,
+    "feature_5": 0.171205869,
+    "vix_close": -4.3457943925
 }, {
     "date": "2019-01-09T00:00:00.000Z",
-    "sentiment_score": -0.0583333336,
-    "vix_close": 19.98
+    "sentiment_score": -0.0583,
+    "feature_2": -0.47839564,
+    "feature_3": 0.730977264,
+    "feature_4": -0.58258394,
+    "feature_5": 0.398347992,
+    "vix_close": -2.3937469468
 }, {
     "date": "2019-01-10T00:00:00.000Z",
-    "sentiment_score": -0.2294117624,
-    "vix_close": 19.5
+    "sentiment_score": -0.2294,
+    "feature_2": -0.820289979,
+    "feature_3": 0.158711288,
+    "feature_4": -0.655528831,
+    "feature_5": 0.917180293,
+    "vix_close": -2.4024024024
 }, {
     "date": "2019-01-11T00:00:00.000Z",
-    "sentiment_score": 0.0119999984,
-    "vix_close": 18.19
+    "sentiment_score": 0.012,
+    "feature_2": -0.564347638,
+    "feature_3": 0.322784371,
+    "feature_4": -0.014584241,
+    "feature_5": 0.657224263,
+    "vix_close": -6.7179487179
 }, {
     "date": "2019-01-14T00:00:00.000Z",
-    "sentiment_score": 0.0800000009,
-    "vix_close": 19.07
+    "sentiment_score": 0.08,
+    "feature_2": -0.389791672,
+    "feature_3": 0.108762326,
+    "feature_4": -0.172279742,
+    "feature_5": 0.249401967,
+    "vix_close": 4.8378229797
 }, {
     "date": "2019-01-15T00:00:00.000Z",
-    "sentiment_score": 0.0884615389,
-    "vix_close": 18.6
+    "sentiment_score": 0.0885,
+    "feature_2": -0.668512214,
+    "feature_3": 0.012287422,
+    "feature_4": -0.622327841,
+    "feature_5": 0.745556361,
+    "vix_close": -2.4646040902
 }, {
     "date": "2019-01-16T00:00:00.000Z",
-    "sentiment_score": -0.1500000055,
-    "vix_close": 19.04
+    "sentiment_score": -0.15,
+    "feature_2": -0.025629655,
+    "feature_3": 0.728832678,
+    "feature_4": -0.086919967,
+    "feature_5": 0.482107932,
+    "vix_close": 2.3655913978
 }, {
     "date": "2019-01-17T00:00:00.000Z",
-    "sentiment_score": -0.056666664,
-    "vix_close": 18.06
+    "sentiment_score": -0.0567,
+    "feature_2": -0.567206149,
+    "feature_3": 0.640292165,
+    "feature_4": -0.196922157,
+    "feature_5": 0.137358929,
+    "vix_close": -5.1470588235
 }, {
     "date": "2019-01-18T00:00:00.000Z",
-    "sentiment_score": -0.0666666681,
-    "vix_close": 17.8
+    "sentiment_score": -0.0667,
+    "feature_2": -0.098391483,
+    "feature_3": 0.182586995,
+    "feature_4": -0.607986354,
+    "feature_5": 0.892391824,
+    "vix_close": -1.4396456257
 }, {
     "date": "2019-01-22T00:00:00.000Z",
-    "sentiment_score": -0.0315789467,
-    "vix_close": 20.8
+    "sentiment_score": -0.0316,
+    "feature_2": -0.620496602,
+    "feature_3": 0.565399849,
+    "feature_4": -0.168498835,
+    "feature_5": 0.026336536,
+    "vix_close": 16.8539325843
 }, {
     "date": "2019-01-23T00:00:00.000Z",
-    "sentiment_score": -0.0000000018,
-    "vix_close": 19.52
+    "sentiment_score": 0.0,
+    "feature_2": -0.095870445,
+    "feature_3": 0.892130804,
+    "feature_4": -0.444520183,
+    "feature_5": 0.10067277,
+    "vix_close": -6.1538461538
 }, {
     "date": "2019-01-24T00:00:00.000Z",
-    "sentiment_score": -0.109090907,
-    "vix_close": 18.89
+    "sentiment_score": -0.1091,
+    "feature_2": -0.863888156,
+    "feature_3": 0.942550756,
+    "feature_4": -0.983244089,
+    "feature_5": 0.158111135,
+    "vix_close": -3.2274590164
 }, {
     "date": "2019-01-25T00:00:00.000Z",
-    "sentiment_score": 0.0666666652,
-    "vix_close": 17.42
+    "sentiment_score": 0.0667,
+    "feature_2": -0.444411355,
+    "feature_3": 0.92335773,
+    "feature_4": -0.157742111,
+    "feature_5": 0.739992688,
+    "vix_close": -7.7818951826
 }, {
     "date": "2019-01-28T00:00:00.000Z",
-    "sentiment_score": -0.085714287,
-    "vix_close": 18.87
+    "sentiment_score": -0.0857,
+    "feature_2": -0.054332699,
+    "feature_3": 0.941404136,
+    "feature_4": -0.585708136,
+    "feature_5": 0.020636265,
+    "vix_close": 8.3237657865
 }, {
     "date": "2019-01-29T00:00:00.000Z",
-    "sentiment_score": 0.1454545483,
-    "vix_close": 19.13
+    "sentiment_score": 0.1455,
+    "feature_2": -0.852045545,
+    "feature_3": 0.551745856,
+    "feature_4": -0.418139864,
+    "feature_5": 0.708914763,
+    "vix_close": 1.3778484367
 }, {
     "date": "2019-01-30T00:00:00.000Z",
-    "sentiment_score": -0.0791666688,
-    "vix_close": 17.66
+    "sentiment_score": -0.0792,
+    "feature_2": -0.284139018,
+    "feature_3": 0.171700752,
+    "feature_4": -0.084379026,
+    "feature_5": 0.499335857,
+    "vix_close": -7.6842655515
 }, {
     "date": "2019-01-31T00:00:00.000Z",
-    "sentiment_score": -0.1678571435,
-    "vix_close": 16.57
+    "sentiment_score": -0.1679,
+    "feature_2": -0.155780578,
+    "feature_3": 0.617398197,
+    "feature_4": -0.056882007,
+    "feature_5": 0.955879933,
+    "vix_close": -6.1721404304
 }, {
     "date": "2019-02-01T00:00:00.000Z",
-    "sentiment_score": -0.0466666676,
-    "vix_close": 16.14
+    "sentiment_score": -0.0467,
+    "feature_2": -0.042648167,
+    "feature_3": 0.358493067,
+    "feature_4": -0.163745623,
+    "feature_5": 0.303398931,
+    "vix_close": -2.5950512975
 }, {
     "date": "2019-02-04T00:00:00.000Z",
-    "sentiment_score": -0.0600000034,
-    "vix_close": 15.73
+    "sentiment_score": -0.06,
+    "feature_2": -0.715769468,
+    "feature_3": 0.703593249,
+    "feature_4": -0.52493061,
+    "feature_5": 0.783386144,
+    "vix_close": -2.5402726146
 }, {
     "date": "2019-02-05T00:00:00.000Z",
-    "sentiment_score": 0.1045454575,
-    "vix_close": 15.57
+    "sentiment_score": 0.1045,
+    "feature_2": -0.562216859,
+    "feature_3": 0.512405489,
+    "feature_4": -0.695040835,
+    "feature_5": 0.73305423,
+    "vix_close": -1.0171646535
 }, {
     "date": "2019-02-06T00:00:00.000Z",
-    "sentiment_score": 0.0947368439,
-    "vix_close": 15.38
+    "sentiment_score": 0.0947,
+    "feature_2": -0.156800071,
+    "feature_3": 0.445554783,
+    "feature_4": -0.063092856,
+    "feature_5": 0.694579849,
+    "vix_close": -1.2202954399
 }, {
     "date": "2019-02-07T00:00:00.000Z",
-    "sentiment_score": -0.0291666671,
-    "vix_close": 16.37
+    "sentiment_score": -0.0292,
+    "feature_2": -0.13192297,
+    "feature_3": 0.485369226,
+    "feature_4": -0.406955626,
+    "feature_5": 0.313248361,
+    "vix_close": 6.4369310793
 }, {
     "date": "2019-02-08T00:00:00.000Z",
-    "sentiment_score": -0.0826086969,
-    "vix_close": 15.72
+    "sentiment_score": -0.0826,
+    "feature_2": -0.326656594,
+    "feature_3": 0.958253933,
+    "feature_4": -0.780593827,
+    "feature_5": 0.886556024,
+    "vix_close": -3.9706780696
 }, {
     "date": "2019-02-11T00:00:00.000Z",
     "sentiment_score": -0.0625,
-    "vix_close": 15.97
+    "feature_2": -0.928139624,
+    "feature_3": 0.384107686,
+    "feature_4": -0.838061734,
+    "feature_5": 0.021617567,
+    "vix_close": 1.5903307888
 }, {
     "date": "2019-02-12T00:00:00.000Z",
-    "sentiment_score": -0.0037037027,
-    "vix_close": 15.43
+    "sentiment_score": -0.0037,
+    "feature_2": -0.763770824,
+    "feature_3": 0.517827598,
+    "feature_4": -0.098476263,
+    "feature_5": 0.884478127,
+    "vix_close": -3.3813400125
 }, {
     "date": "2019-02-13T00:00:00.000Z",
-    "sentiment_score": 0.0521739135,
-    "vix_close": 15.65
+    "sentiment_score": 0.0522,
+    "feature_2": -0.174873159,
+    "feature_3": 0.74188231,
+    "feature_4": -0.091744219,
+    "feature_5": 0.194372765,
+    "vix_close": 1.425793908
 }, {
     "date": "2019-02-14T00:00:00.000Z",
-    "sentiment_score": -0.0437500007,
-    "vix_close": 16.22
+    "sentiment_score": -0.0438,
+    "feature_2": -0.682743551,
+    "feature_3": 0.575101894,
+    "feature_4": -0.886529755,
+    "feature_5": 0.624064871,
+    "vix_close": 3.642172524
 }, {
     "date": "2019-02-15T00:00:00.000Z",
-    "sentiment_score": 0.0500000005,
-    "vix_close": 14.91
+    "sentiment_score": 0.05,
+    "feature_2": -0.385324207,
+    "feature_3": 0.402636758,
+    "feature_4": -0.964539981,
+    "feature_5": 0.619334942,
+    "vix_close": -8.0764488286
 }, {
     "date": "2019-02-19T00:00:00.000Z",
-    "sentiment_score": 0.0846153819,
-    "vix_close": 14.88
+    "sentiment_score": 0.0846,
+    "feature_2": -0.443850357,
+    "feature_3": 0.752223478,
+    "feature_4": -0.792980466,
+    "feature_5": 0.187612001,
+    "vix_close": -0.2012072435
 }, {
     "date": "2019-02-20T00:00:00.000Z",
-    "sentiment_score": 0.0181818174,
-    "vix_close": 14.02
+    "sentiment_score": 0.0182,
+    "feature_2": -0.16688027,
+    "feature_3": 0.952216451,
+    "feature_4": -0.255406621,
+    "feature_5": 0.603799415,
+    "vix_close": -5.7795698925
 }, {
     "date": "2019-02-21T00:00:00.000Z",
-    "sentiment_score": -0.0999999978,
-    "vix_close": 14.46
+    "sentiment_score": -0.1,
+    "feature_2": -0.998412101,
+    "feature_3": 0.094863565,
+    "feature_4": -0.62355207,
+    "feature_5": 0.051195468,
+    "vix_close": 3.1383737518
 }, {
     "date": "2019-02-22T00:00:00.000Z",
-    "sentiment_score": -0.1060606067,
-    "vix_close": 13.51
+    "sentiment_score": -0.1061,
+    "feature_2": -0.412501981,
+    "feature_3": 0.144547325,
+    "feature_4": -0.624952233,
+    "feature_5": 0.129977305,
+    "vix_close": -6.5698478562
 }, {
     "date": "2019-02-25T00:00:00.000Z",
-    "sentiment_score": -0.0526315813,
-    "vix_close": 14.85
+    "sentiment_score": -0.0526,
+    "feature_2": -0.074398697,
+    "feature_3": 0.375718278,
+    "feature_4": -0.786278217,
+    "feature_5": 0.026212708,
+    "vix_close": 9.9185788305
 }, {
     "date": "2019-02-26T00:00:00.000Z",
-    "sentiment_score": -0.1470588231,
-    "vix_close": 15.17
+    "sentiment_score": -0.1471,
+    "feature_2": -0.363149317,
+    "feature_3": 0.292590068,
+    "feature_4": -0.608140596,
+    "feature_5": 0.034496698,
+    "vix_close": 2.1548821549
 }, {
     "date": "2019-02-27T00:00:00.000Z",
-    "sentiment_score": 0.0310344817,
-    "vix_close": 14.7
+    "sentiment_score": 0.031,
+    "feature_2": -0.11739028,
+    "feature_3": 0.353518594,
+    "feature_4": -0.456587676,
+    "feature_5": 0.545575252,
+    "vix_close": -3.0982201714
 }, {
     "date": "2019-02-28T00:00:00.000Z",
-    "sentiment_score": -0.0409090905,
-    "vix_close": 14.78
+    "sentiment_score": -0.0409,
+    "feature_2": -0.505814907,
+    "feature_3": 0.846352988,
+    "feature_4": -0.067240084,
+    "feature_5": 0.055250916,
+    "vix_close": 0.5442176871
 }, {
     "date": "2019-03-01T00:00:00.000Z",
-    "sentiment_score": -0.0749999979,
-    "vix_close": 13.57
+    "sentiment_score": -0.075,
+    "feature_2": -0.634875873,
+    "feature_3": 0.879516402,
+    "feature_4": -0.912045747,
+    "feature_5": 0.716325725,
+    "vix_close": -8.1867388363
 }]
