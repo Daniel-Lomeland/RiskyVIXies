@@ -1,4 +1,4 @@
-// Trace1 for the Greek Data
+// Trace1 for VIX data
 var trace1 = {
     x: data.map(row => row.date),
     y: data.map(row => row.vix_close),
@@ -6,13 +6,13 @@ var trace1 = {
     mode: 'lines',
     line: {
         color: '#4B8937',
-        width: 4
+        width: 3
     },
     name: "VIX",
     // type: "line"
   };
   
-//   Trace 2 for the Roman Data
+//   Trace 2 for Sentiment Score
   var trace2 = {
     x: data.map(row => row.date),
     y: data.map(row => row.sentiment_score),
