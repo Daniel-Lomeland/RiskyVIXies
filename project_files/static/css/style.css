@@ -19,7 +19,6 @@ body {
     color: #FFFFFF;
 }
 
-
 .navbar-default .navbar-brand {
     color: #FFFFFF;
 }
@@ -38,19 +37,15 @@ hr {
     border: 1px grey;
   }
 
-<<<<<<< HEAD
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #DDD1C7;
-  color: #FFFFFF;
-  font-variant: small-caps;
-}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #DDD1C7;
+    color: #FFFFFF;
+    font-variant: small-caps;
+  }
 
-
-
-=======
 .box {
     padding: 10px;
     color: grey;
@@ -61,6 +56,8 @@ hr {
     height:auto;
     overflow:auto;
 }
->>>>>>> 9185e093a8de1b444ce6eca5591f4f71070d2d10
 
-
+td {
+    font-size: 30px;
+    padding: 10px;
+  }
