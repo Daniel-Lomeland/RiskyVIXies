@@ -3,19 +3,37 @@ var button = d3.select("#click-me");
 
 // Triggered when Predict the VIX is clicked
 function handleClick() {
-    console.log("VIX Prediction: +++");
-    var x = document.getElementById("predict-table").rows.length;
-    if (x > 1){ 
-        deleteRow();
-    }
-    var tbody = d3.select("tbody");
-    var row = tbody.append("tr");
-    var cell = tbody.append("td");
-    cell.text("4/25/2019");
-    var cell = tbody.append("td");
-    cell.text("+4.7586%");
-    var cell = tbody.append("td");
-    cell.text(":-(");
+    var predictionUrl = "http://127.0.0.1:9999/api";
+    // var currentDate = new Date();
+    // currentDate.setDate(currentDate.getDate() + 1).format;
+    // currentDate.setDate(currentDate.getDate() + 1);
+    // console.log(predictionUrl);
+
+    d3.json(predictionUrl).then(function (response) {
+        var prediction = response;
+        var face = "";
+        console.log(prediction);
+         
+        if (prediction > 3) {
+            face = "<img src='../static/images/fear.png' alt='fear'>"
+          } else if (prediction > -3) { 
+            face = "<img src='../static/images/neautral.png' alt='neutral'>"
+          } else {
+            face = "<img src='../static/images/happy.png' alt='happy'>"
+          }
+
+
+        var x = document.getElementById("predict-table").rows.length;
+        if (x > 1) {
+            deleteRow();
+        }
+        var tbody = d3.select("tbody");
+        var row = tbody.append("tr");
+        var cell = tbody.append("td");
+        cell.text(prediction);
+        var cell = tbody.append("td");
+        cell.html(face);
+    })
 }
 
 button.on("click", handleClick);
