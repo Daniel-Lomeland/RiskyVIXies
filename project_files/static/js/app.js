@@ -4,10 +4,6 @@ var button = d3.select("#click-me");
 // Triggered when Predict the VIX is clicked
 function handleClick() {
     var predictionUrl = "http://127.0.0.1:9999/api";
-    // var currentDate = new Date();
-    // currentDate.setDate(currentDate.getDate() + 1).format;
-    // currentDate.setDate(currentDate.getDate() + 1);
-    // console.log(predictionUrl);
 
     d3.json(predictionUrl).then(function (response) {
         var prediction = response;
@@ -17,7 +13,7 @@ function handleClick() {
         if (prediction > 3) {
             face = "<img src='../static/images/fear.png' alt='fear'>"
           } else if (prediction > -3) { 
-            face = "<img src='../static/images/neautral.png' alt='neutral'>"
+            face = "<img src='../static/images/neutral.png' alt='neutral'>"
           } else {
             face = "<img src='../static/images/happy.png' alt='happy'>"
           }
