@@ -1,5 +1,5 @@
 #!pip install google.cloud
-# export GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Kristi\Desktop\RR_SAFE\SAFE_FP\project_files\Class_Project-2a60da3c5286.json"
+# export GOOGLE_APPLICATION_CREDENTIALS="/Users/daniellomeland/1_projects/Final_Project/Class_Project-key.json"
 
 # Imports the Google Cloud client library
 from google.cloud import language
@@ -91,5 +91,10 @@ def get_sentiment():
         'min', '25%', '50%', '75%', 'max']]
     # to DF
     # df7.to_csv("sample5.csv")
+    xlist = [0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.0, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612]
     return df7.values.tolist()
+    # print(df4)
+    # print(df7)
+    # print(df6)
+    #p  preturn 
 

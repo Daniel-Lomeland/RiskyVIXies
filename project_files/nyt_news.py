@@ -15,7 +15,7 @@ def getNews():
 
     url_target = 'https://api.nytimes.com/svc/search/v2/'
     #query_url = f"{url_target}articlesearch.json?fq=news_desk:('Sports')&page=0&begin_date={today}&end_date={today}&api-key={api_key}"
-    query_url = f"{url_target}articlesearch.json?fq=market&api-key={api_key}"
+    query_url = f"{url_target}articlesearch.json?fq=market&begin_date={today}&end_date={today}&api-key={api_key}"
     print(query_url)
 
     news = requests.get(query_url).json()
