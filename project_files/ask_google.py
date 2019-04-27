@@ -19,11 +19,9 @@ def get_sentiment():
     Main_Headline = df["Main Headline"].tolist()
     Print_Headline = df["Print Headline"].tolist()
 
-
     Snippet_s= []
     Lead_Paragraph_s= []
     Main_Headline_s = []
-
     Snippet_m = []
     Lead_Paragraph_m= []
     Main_Headline_m = []
@@ -97,12 +95,8 @@ def get_sentiment():
     df6= df4.groupby(df4['Published'],as_index=False).mean()
     df7= df6[['Snippet_s', 'Lead_Paragraph_s', 'Main_Headline_s', 'mean', 'std',
         'min', '25%', '50%', '75%', 'max']]
+        
     # to DF
     print(df7)
-    # df7.to_csv("sample5.csv")
     return df7.values.tolist()
-    # print(df4)
-
-    # print(df6)
-    #p  preturn 
 

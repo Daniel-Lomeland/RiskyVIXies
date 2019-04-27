@@ -23,7 +23,6 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
-
 @app.route("/methodology.html")
 def methodology():
     """Return the homepage."""
@@ -62,14 +61,13 @@ def predict():
 
     # # Run sentiment analysis on latest news
     new_data = ask_google.get_sentiment()
-    # print(new_data)
+    print(new_data)
     # words= word_2_vec.WTV()
     # print(words)
     # Predict new VIX value
-    #new_data = [7.000000e-01, 7.000000e-01, 6.000000e-01, 7.000000e-01, 6.000000e-01, 0.173205,4.000000e-01,0.550000,0.700000,0.700000]
     prediction = (model.predict(new_data))
     prediction_list = np.array(prediction).tolist()
-    prediction_value = round(prediction_list[0][0],2)
+    prediction_value = round(prediction_list[0][0],5)
     print(prediction_value)
     # return jsonify(prediction_value)
     return jsonify(3)

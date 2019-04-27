@@ -10,7 +10,7 @@ function handleClick() {
         var face = "";
         console.log(prediction);
          
-        if (prediction > 3) {
+        if (prediction > 2.5) {
             face = "<img src='../static/images/fear.png' alt='fear'>"
           } else if (prediction > -3) { 
             face = "<img src='../static/images/neutral.png' alt='neutral'>"
