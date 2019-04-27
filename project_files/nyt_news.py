@@ -13,7 +13,7 @@ def getNews():
     headline_print = []
     headline_seo = []
 
-    for i in range(0,10):
+    for i in range(0,1):
 
         #url_target = "https://newsapi.org/v2/top-headlines?"
 

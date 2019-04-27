@@ -30,15 +30,19 @@ def get_sentiment():
 
 
     for item in Snippet:
-        text = item    
-        client = language.LanguageServiceClient()
-        document = types.Document(
-                content=text,
-                type=enums.Document.Type.PLAIN_TEXT)
-        sentiment = client.analyze_sentiment(document).document_sentiment
-        print('Score: {}'.format(sentiment.score))
-        Snippet_s.append(sentiment.score)
-        Snippet_m.append(sentiment.magnitude)
+        try: 
+            text = item    
+            client = language.LanguageServiceClient()
+            document = types.Document(
+                    content=text,
+                    type=enums.Document.Type.PLAIN_TEXT)
+            sentiment = client.analyze_sentiment(document).document_sentiment
+            print('Score: {}'.format(sentiment.score))
+            Snippet_s.append(sentiment.score)
+            Snippet_m.append(sentiment.magnitude)
+        except TypeError:
+            print("bad text")
+
 
     for item in Lead_Paragraph:
         text = item    
