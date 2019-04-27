@@ -7,6 +7,10 @@ from google.cloud.language import enums
 from google.cloud.language import types
 import pandas as pd
 
+# client = Client.from_service_account_json('/Users/daniellomeland/1_projects/Final_Project/Class_Project-key.json')
+
+
+
 def get_sentiment():
     df = pd.read_csv("resources/news/market_news.csv")
 
@@ -26,15 +30,19 @@ def get_sentiment():
 
 
     for item in Snippet:
-        text = item    
-        client = language.LanguageServiceClient()
-        document = types.Document(
-                content=text,
-                type=enums.Document.Type.PLAIN_TEXT)
-        sentiment = client.analyze_sentiment(document).document_sentiment
-        print('Score: {}'.format(sentiment.score))
-        Snippet_s.append(sentiment.score)
-        Snippet_m.append(sentiment.magnitude)
+        try: 
+            text = item    
+            client = language.LanguageServiceClient()
+            document = types.Document(
+                    content=text,
+                    type=enums.Document.Type.PLAIN_TEXT)
+            sentiment = client.analyze_sentiment(document).document_sentiment
+            print('Score: {}'.format(sentiment.score))
+            Snippet_s.append(sentiment.score)
+            Snippet_m.append(sentiment.magnitude)
+        except TypeError:
+            print("bad text")
+
 
     for item in Lead_Paragraph:
         text = item    
@@ -90,11 +98,12 @@ def get_sentiment():
     df7= df6[['Snippet_s', 'Lead_Paragraph_s', 'Main_Headline_s', 'mean', 'std',
         'min', '25%', '50%', '75%', 'max']]
     # to DF
+    print(df7)
     # df7.to_csv("sample5.csv")
     xlist = [0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.0, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612, 0.10000000149011612]
     return df7.values.tolist()
     # print(df4)
-    # print(df7)
+
     # print(df6)
     #p  preturn 
 
