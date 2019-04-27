@@ -26,7 +26,7 @@ def predict():
 
     # Run sentiment analysis on latest news
     new_data = ask_google.get_sentiment()
-    print(new_data)
+    # print(new_data)
 
     # Predict new VIX value
     #new_data = [7.000000e-01, 7.000000e-01, 6.000000e-01, 7.000000e-01, 6.000000e-01, 0.173205,4.000000e-01,0.550000,0.700000,0.700000]
