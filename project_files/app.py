@@ -3,6 +3,10 @@ import pickle
 import numpy as np
 import nyt_news
 import ask_google
+import word_2_vec
+
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 # Flask setup
 app = Flask(__name__)
@@ -22,19 +26,20 @@ def index():
 @app.route('/api',methods=['GET'])
 def predict():
     # Get latest news
-    nyt_news.getNews()
+    # nyt_news.getNews()
 
-    # Run sentiment analysis on latest news
-    new_data = ask_google.get_sentiment()
+    # # Run sentiment analysis on latest news
+    # new_data = ask_google.get_sentiment()
     # print(new_data)
-
+    words= word_2_vec.WTV()
+    print(words)
     # Predict new VIX value
     #new_data = [7.000000e-01, 7.000000e-01, 6.000000e-01, 7.000000e-01, 6.000000e-01, 0.173205,4.000000e-01,0.550000,0.700000,0.700000]
-    prediction = (model.predict(new_data))
-    prediction_list = np.array(prediction).tolist()
-    prediction_value = round(prediction_list[0][0],2)
-    print(prediction_value)
-    return jsonify(prediction_value)
-
+    # prediction = (model.predict(new_data))
+    # prediction_list = np.array(prediction).tolist()
+    # prediction_value = round(prediction_list[0][0],2)
+    # print(prediction_value)
+    # return jsonify(prediction_value)
+    return jsonify(1)
 if __name__ == "__main__":
     app.run(port=9999, debug=True)
