@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>RiskyVIXies</title>
+    <title>VIX vs. News</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,8 +12,6 @@
 
 <body>
 
-    <!-- Fixed navbar -->
-    <div class="container">
         <!-- Creates the Nav Container -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -30,54 +28,43 @@
 
 
         <!--Middle-->
-        <div class="container">
-            <div class="row">
-                <!--First Column in this Row-->
-                <div class="col-md-12">
-                    <div class="box">
-                        <h1>Mulitvariate Linear Regression Model</h1>
-                        <hr>
-                        <p>The model was trained using a Multivariate Linear Regression model on the VIX daily percent change from the CBOE and the New York Times financial and business news sentiment and Word2Vec. </p>
-                        <p>&NonBreakingSpace;</p>
-                        <p><b>Sentiment and Descriptive data (mean, std, percentile, etc.) Only</b></p>
-                        <p><img src="../static/images/sentiment.png" class="img-responsive" alt="Scatter Plot (Sentiment and the VIX)"></p><br>
-                        True output: [-3.41521869]<br>
-                        Predicted output: [-1.16815945]<br>
-                        Prediction Error: [2.24705924]<br>
-                        Mean Squared Error: [73.977]<br>
-                        R2 Score:  [0.8228]<br>
-                        <br> 
-                        <p><b>Word2Vec Vectors Only</b></p>
-                        <p><img src="../static/images/word2vec.png" class="img-responsive" alt="Training Results (Sentiment and the VIX)"></p><br>
-                        True output: [-3.41521869]<br>
-                        Predicted output: [-2.68789057]<br>
-                        Prediction Error: [0.72732812]<br>
-                        Mean Squared Error: [76.268]<br>
-                        R2 Score:  [0.8792]<br>
-                        <br>
-                        <p><b>Word2Vec Vectors and Sentiment</b></p>
-                        <p><img src="../static/images/word2vec_and_sentiment.png" class="img-responsive" alt="Test Results (Sentiment and the VIX)"></p><br>
-                        True output: [-3.41521869]<br>
-                        Predicted output: [-1.02022834]<br>
-                        Prediction Error: [2.39499035]<br>
-                        Mean Squared Error: [73.977]<br>
-                        R2 Score:  [0.8228]<br>
-                        <br> 
-                    
-                    </div>
-                </div>
+        <div class="container-fluid bg-1  col-md-12">
+            <div class="box">
+                <h1>Mulitvariate Linear Regression Model</h1>
+                <hr>
+                <p>The model was trained using a Multivariate Linear Regression model on the VIX daily percent change from the CBOE and the New York Times financial and business news sentiment and Word2Vec. </p>
+                <p>&NonBreakingSpace;</p>
+                <p><b>Sentiment and Descriptive data (mean, std, percentile, etc.) Only</b></p>
+                <p><img src="../static/images/sentiment.png" class="img-responsive" alt="Scatter Plot (Sentiment and the VIX)"></p><br>
+                True output: [-3.41521869]<br>
+                Predicted output: [-1.16815945]<br>
+                Prediction Error: [2.24705924]<br>
+                Mean Squared Error: [73.977]<br>
+                R2 Score:  [0.8228]<br>
+                <br> 
+                <p><b>Word2Vec Vectors Only</b></p>
+                <p><img src="../static/images/word2vec.png" class="img-responsive" alt="Training Results (Sentiment and the VIX)"></p><br>
+                True output: [-3.41521869]<br>
+                Predicted output: [-2.68789057]<br>
+                Prediction Error: [0.72732812]<br>
+                Mean Squared Error: [76.268]<br>
+                R2 Score:  [0.8792]<br>
+                <br>
+                <p><b>Word2Vec Vectors and Sentiment</b></p>
+                <p><img src="../static/images/word2vec_and_sentiment.png" class="img-responsive" alt="Test Results (Sentiment and the VIX)"></p><br>
+                True output: [-3.41521869]<br>
+                Predicted output: [-1.02022834]<br>
+                Prediction Error: [2.39499035]<br>
+                Mean Squared Error: [73.977]<br>
+                R2 Score:  [0.8228]<br>
+                <br> 
             </div>
         </div>
 
-        <div class="row thinline">
-            <div class="col">
-                <p>&nbsp;</p>
-            </div>
-        </div>
+        <!-- Footer -->
         <div class="row footer panel-footer">
             <p>© Nichelle, Daniel, Kaushik, and Kristi</p>
         </div>
-
 
 </body>
 
