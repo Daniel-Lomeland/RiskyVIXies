@@ -19,14 +19,58 @@
                     <a class="navbar-brand" href="#">VIX vs. News</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="methodology.html">Methodology</a></li>
                     <li><a href="regression.html">Regression</a></li>
-                    <li><a href="clustering.html">Clustering</a></li>
+                    <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+                            <div class="dropdown-content">
+                              <a href="business_news.html">Clustering Business News</a>
+                              <a href="entrepreneurial_news.html">Clustering Entrepreneurial News</a>
+                              <a href="financial_news.html">Clustering Financial News</a>
+                            </div>
+                          </li>
+                        
                 </ul>
             </div>
         </nav>
 
 
         <!--Middle-->
+        <div class = "container-fluid bg-1 col-md-12">
+            <script type="text/javascript" src="../static/js/business_words/plotlyjs-bundle.js"></script>
+        
+        
+            <script type="text/javascript" src="../static/js/business_words/figure.js"></script>
+            
+            <div id="d1e3d585-4bee-44a5-a260-0f08a79ddc89" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+            <script type="text/javascript">
+                (function(){
+                    window.PLOTLYENV={'BASE_URL': 'https://plot.ly'};
+    
+                    var gd = document.getElementById('d1e3d585-4bee-44a5-a260-0f08a79ddc89')
+                    var resizeDebounce = null;
+    
+                    function resizePlot() {
+                        var bb = gd.getBoundingClientRect();
+                        Plotly.relayout(gd, {
+                            width: bb.width,
+                            height: bb.height
+                        });
+                    }
+    
+                    
+    
+                    
+                    Plotly.plot(gd,  {
+                        data: figure.data,
+                        layout: figure.layout,
+                        frames: figure.frames,
+                        config: {"showLink": true, "linkText": "Export to plot.ly", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
+                    });
+                    
+                }());
+            </script>
+        </div>
         <div class = "container-fluid bg-1 col-md-12">
             <script type="text/javascript" src="../static/js/business_headlines/plotlyjs-bundle.js"></script>
                 
@@ -78,6 +122,7 @@
                 }());
                 </script>
             </div>
+
 
 
         <!-- Footer -->
